@@ -24,8 +24,7 @@ const data = [{
     },
     {
         id: 7,
-        imgUrl: 'img/hamster.jpg',
-        counter: 2
+        imgUrl: 'img/hamster.jpg'
     },
     {
         id: 8,
@@ -54,16 +53,9 @@ const animItem = bodymovin.loadAnimation({
 });
 
 play.addEventListener('click', () => {
-    // svgContainer.classList.remove('hide');
     animItem.goToAndPlay(0, true);
 })
 
-// animItem.addEventListener('complete', () => {
-    //     svgContainer.classList.add('hide');
-    // })
-
-
-    // console.log(shuffledData);
 
     const fillCards = () => {
         let shuffledData = [...data, ...data]
@@ -73,7 +65,6 @@ play.addEventListener('click', () => {
             imgArray[i].src = shuffledData[i].imgUrl;
             imgArray[i].closest('.card').dataset.id = shuffledData[i].id;
         }
-
         cardsArray.forEach(el => el.addEventListener('click', cardClick));
 }
 
@@ -125,8 +116,6 @@ const moveChecker = (arr) => {
 const init = () => {
     fillCards();
 }
-
-
 
 init();
 
