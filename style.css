@@ -76,9 +76,9 @@ header {
     background-color: transparent;
 }
 
-.card:hover > .card-overlay {
+/* .card:hover > .card-overlay {
     opacity: 0;
-}
+} */
 
 .card-overlay {
     background: linear-gradient(180deg, #48C6EF 0%, #6F86D6 100%);
@@ -106,6 +106,12 @@ header {
     pointer-events: none;
 }
 
-/* .hide {
+.open {
     visibility: hidden;
-} */
+    opacity: 0;
+}
+
+.scored {
+    visibility: visible;
+    opacity: 1;
+}
