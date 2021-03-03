@@ -71,9 +71,14 @@ const timerStartFunction = () => {
 }
 
 const resetBoard = () => {
+    score = 0;
+    scoreBoard.textContent = 0;
     moves = [];
     // sec = 0;
-    cardsArray.forEach(e => e.classList.remove('scored'))
+    cardsArray.forEach(e => {
+        e.classList.remove('scored');
+        e.querySelector('.card-overlay').classList.remove('open');
+    })
 }
 
 
