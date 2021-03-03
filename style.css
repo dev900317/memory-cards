@@ -59,6 +59,8 @@ header {
     justify-content: center;
     width: auto;
     margin-top: 3rem;
+    opacity: 1;
+    transition: .3 all ease;
 }
 
 .card {
@@ -114,4 +116,12 @@ header {
 .scored {
     visibility: visible;
     opacity: 1;
+}
+
+.cards.hidden {
+    opacity: 0;
+}
+
+.cards.hidden {
+    opacity: 0;
 }
