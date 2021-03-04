@@ -6,89 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"
+        integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw=="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="svg hide" id="svg"></div>
-        <h1 class="title">Memory Game</h1>
+    <div class="container">
+        <header>
+            <div class="svg hide" id="svg"></div>
+            <h1 class="title">Memory Game</h1>
 
-        <div class="score-board">
-            <h2 class="time">Time: <span class="js-time">0s</span></h2>
-            <h2 class="score">Score: <span class="js-score">0</span></h2>
-        </div>
+            <div class="score-board">
+                <h2 class="time">Time: <span class="js-time">0s</span></h2>
+                <h2 class="score">Score: <span class="js-score">0</span></h2>
+            </div>
 
-        <button class="btn-reset">New Game</button>
-    </header>
+            <button class="btn-reset">New Game</button>
+        </header>
 
-    <div class="cards hidden">
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
-        </div>
-        <div class="card">
-            <div class="card-overlay"></div>
-            <img src="" alt="" class="card-img">
+        <div class="cards hidden">
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <img src="" alt="" class="card-img">
+            </div>
         </div>
     </div>
 </body>
