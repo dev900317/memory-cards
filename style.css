@@ -22,7 +22,6 @@ html {
 }
 
 body {
-    padding: 5rem 0;
     background-color: var(--clr-green);
 }
 
@@ -32,6 +31,39 @@ body {
     padding: 12em 14em;
     width: min(90%, 1060px);
     box-shadow: var(--shadow);
+}
+
+/* win modal */
+.win-container {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color:rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+.win-modal {
+    width: 300px;
+    background-color: white;
+    z-index: 101;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.win-msg-title {
+    font-size: 4rem;
+}
+
+.win-msg-info {
+    font-size: 1.6rem;
 }
 
 /* Scoreboard section */
