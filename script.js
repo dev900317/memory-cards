@@ -41,11 +41,13 @@ const scoreBoard = document.querySelector('.js-score');
 const timeBoard = document.querySelector('.js-time');
 const cardsArray = document.querySelectorAll('.card');
 const winContainer = document.querySelector('.win-container');
+const winTimeOutput = document.querySelector('.js-win-time');
 
 let counter = 0;
 let moves = []
 let score = 0;
 let win = false;
+let winTime = 0;
 
 let sec = 0;
 let timeCounter;
@@ -122,7 +124,11 @@ const moveChecker = (arr) => {
   let [firstMove, secondMove] = arr;
 
   if (firstMove && secondMove) {
-    if (firstMove.dataset.id === secondMove.dataset.id && !firstMove.classList.contains('scored') && !secondMove.classList.contains('scored')) {
+    if (
+      firstMove.dataset.id === secondMove.dataset.id &&
+      !firstMove.classList.contains('scored') &&
+      !secondMove.classList.contains('scored')
+       ) {
       score++;
       scoreBoard.textContent = score;
       firstMove.classList.add('scored');
@@ -135,10 +141,15 @@ const moveChecker = (arr) => {
       if(isWinner) {
         win = isWinner;
         winContainer.style.visibility = 'visible';
+        winTimeOutput.textContent = timeBoard.textContent;
+        clearInterval(timeCounter);
       }
 
       moves = [];
-    } else if (!firstMove.classList.contains('scored') && !secondMove.classList.contains('scored')) {
+    } else if (
+      !firstMove.classList.contains('scored') &&
+      !secondMove.classList.contains('scored')
+      ) {
       setTimeout(() => {
         firstMove.querySelector('.card-overlay').classList.remove('open');
         secondMove.querySelector('.card-overlay').classList.remove('open');
